@@ -1,0 +1,64 @@
+<!--Simple way to add gradient background overlay to background image-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(traveller.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+
+        }
+
+        .main {
+            display: flex;
+            height: 500px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        p {
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: white;
+            font-family: montserrat;
+            font-size: 130px;
+        }
+
+        .content p span {
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media(max-width:991px) {
+            .content p {
+                font-size: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <DIV class="main">
+        <div class="content">
+            <p>TRAVEL <span>WORLD</span>
+            </p>
+        </div>
+
+    </DIV>
+
+</body>
+
+</html>
